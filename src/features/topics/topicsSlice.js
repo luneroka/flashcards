@@ -16,6 +16,12 @@ export const topicsSlice = createSlice({
       };
     },
   },
+  extraReducers: {
+    'quizzes/addQuiz': (state, action) => {
+      const { topicId, id } = action.payload;
+      state.topics[topicId].quizIds.push(id);
+    },
+  },
 });
 
 // Export topics object selector
