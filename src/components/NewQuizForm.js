@@ -33,7 +33,7 @@ export default function NewQuizForm() {
       addQuiz({
         name: name,
         topicId: topicId,
-        cardsIds: cardsIds,
+        cardIds: cardIds,
         id: quizId,
       })
     );
