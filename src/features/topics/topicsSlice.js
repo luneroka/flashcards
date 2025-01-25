@@ -19,7 +19,11 @@ export const topicsSlice = createSlice({
   extraReducers: {
     'quizzes/addQuiz': (state, action) => {
       const { topicId, id } = action.payload;
-      state.topics[topicId].quizIds.push(id);
+      if (state.topics[topicId]) {
+        state.topics[topicId].quizIds.push(id);
+      } else {
+        console.error(`Topic with id ${topicId} not found`);
+      }
     },
   },
 });
