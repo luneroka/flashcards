@@ -29,7 +29,14 @@ export default function NewQuizForm() {
     const quizId = uuidv4();
 
     // dispatch add quiz action
-
+    dispatch(
+      addQuiz({
+        name: name,
+        topicId: topicId,
+        cardsIds: cardsIds,
+        id: quizId,
+      })
+    );
     navigate(ROUTES.quizzesRoute());
   };
 
