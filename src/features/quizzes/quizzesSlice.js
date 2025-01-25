@@ -5,4 +5,10 @@ export const quizzesSlice = createSlice({
   initialState: {
     quizzes: {},
   },
+  reducers: {
+    addQuiz: (state, action) => {
+      const { id } = action.payload;
+      state.quizzes[id] = action.payload;
+    },
+  },
 });
