@@ -5,4 +5,10 @@ export const cardsSlice = createSlice({
   initialState: {
     cards: {},
   },
+  reducers: {
+    addCard: (state, action) => {
+      const { id } = action.payload;
+      state.cards[id] = action.payload;
+    },
+  },
 });
