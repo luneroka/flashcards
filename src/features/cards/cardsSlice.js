@@ -12,3 +12,7 @@ export const cardsSlice = createSlice({
     },
   },
 });
+
+export const { addCard } = cardsSlice.actions;
+export const selectCardById = (id) => (state) => state.cards.cards[id];
+export default cardsSlice.reducer;
