@@ -47,3 +47,7 @@ npm start
 You can learn more in the Create React App documentation.
 
 To learn React, check out the React documentation.
+
+## License
+
+This project is licensed under the MIT [License](https://github.com/luneroka/flashcards/blob/main/LICENSE).
