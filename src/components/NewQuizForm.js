@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import ROUTES from '../app/routes';
 // import selectors
 import { selectTopics } from '../features/topics/topicsSlice';
+import { addQuiz } from '../features/quizzes/quizzesSlice';
 
 export default function NewQuizForm() {
   const [name, setName] = useState('');
